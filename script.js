@@ -14,7 +14,9 @@ document.addEventListener("DOMContentLoaded", function() {
     // Populate the timetable
     timetableData.forEach(course => {
       const card = document.createElement("div");
-      card.className = "col-md-4 mb-4 animate__animated animate__fadeInUp";
+      card.className = "col-md-4 mb-4";
+
+    card.classList.add("animated", "fadeInUp");
   
       card.innerHTML = `
         <div class="card">
@@ -31,20 +33,6 @@ document.addEventListener("DOMContentLoaded", function() {
   
       timetableContainer.appendChild(card);
     });
-  
-    // Event delegation to handle the "Fade Out" button click
-    timetableContainer.addEventListener("click", function(event) {
-      const fadeOutButton = event.target.closest(".fade-out-btn");
-      if (fadeOutButton) {
-        fadeOutCard(fadeOutButton);
-      }
-    });
-  
-    // Function to handle the "Fade Out" button click
-    function fadeOutCard(button) {
-      const card = button.closest('.card');
-      card.style.opacity = 0.5;
-      button.disabled = true;
-    }
+
   });
   
