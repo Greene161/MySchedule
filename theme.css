@@ -1,26 +1,33 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
+    background-color: #f8f9fa;
+    font-family: 'Lato';
+  }
+  
+  .jumbotron {
+    background-color: #242a30;
+    color: #ffffff;
+    border-bottom-right-radius: 2rem;
+  }
+  
+  .card {
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .course-over {
+    opacity: 0.7;
+  }
+  
+  h5 {
+    color: #008080;
+  }
 
-header {
-    background-color: #3498db;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-#timetable {
-    padding: 20px;
-}
-
-.card {
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.card.collapsed {
-    transform: scaleY(0);
-    margin: 0 !important; /* Override Bootstrap margin for a smoother transition */
-}
+  .lead {
+    color: #008080;
+  }
+  
+  footer {
+    width: 100%;
+    padding: 1rem 4rem;
+    position: absolute;
+    bottom: 0;
+  }
