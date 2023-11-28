@@ -1,24 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exam Timetable</title>
-    <!-- Add Bootstrap CSS -->
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="theme.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Your Timetable App</title>
+  <!-- Add Bootstrap CSS link here -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <!-- Add your custom CSS file if needed -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bg-primary text-white text-center py-2">
-        <h1>Exam Timetable</h1>
-    </header>
-    <main id="timetable" class="container mt-4">
-        <!-- Timetable content will be dynamically added here -->
-    </main>
-    <!-- Add Bootstrap JS and Popper.js (required for some Bootstrap components) -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="java.js"></script>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <span class="navbar-brand mb-0 h1">
+    <img src="calendar-icon.svg" alt="Calendar Icon" height="24" width="24" class="mr-2">
+      Timetable App</span>
+  </nav>
+
+  <!-- Header Section -->
+  <header class="jumbotron jumbotron-fluid text-center">
+    <div class="container">
+      <h1 class="display-4">My Semester Timetable</h1>
+      <p class="lead">Stay organized and never miss a class!</p>
+    </div>
+  </header>
+
+  <!-- Timetable Section -->
+  <section class="container mt-5">
+    <div id="timetable" class="row"></div>
+  </section>
+
+  <footer class="footer navbar-dark bg-dark mt-5">
+    <span class="navbar-text mx-auto">
+      © 2023 Your Timetable App
+    </span>
+  </footer>
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <!-- Your custom JavaScript file -->
+  <script src="script.js"></script>
 </body>
 </html>
