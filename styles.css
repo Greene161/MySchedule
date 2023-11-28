@@ -28,4 +28,6 @@ body {
   footer {
     width: 100%;
     padding: 1rem 4rem;
+    position: fixed;
+    bottom: 0;
   }
