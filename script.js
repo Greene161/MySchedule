@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Populate the timetable
     timetableData.forEach(course => {
       const card = document.createElement("div");
-      card.className = "col-md-4 mb-4";
+      card.className = "col-md-4 mb-4 animate__animated animate__fadeInUp";
   
       card.innerHTML = `
         <div class="card">
@@ -26,6 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
         </div>
       `;
+
+        card.style.animationDelay = `${index * 0.2}s`;
   
       timetableContainer.appendChild(card);
     });
