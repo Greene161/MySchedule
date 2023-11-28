@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Populate the timetable
     timetableData.forEach(course => {
       const card = document.createElement("div");
-      card.className = "col-sm-6 mb-4";
+      card.className = "col-md-4 mb-4";
   
       card.innerHTML = `
         <div class="card">
