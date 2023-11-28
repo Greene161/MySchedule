@@ -28,9 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
           </div>
         </div>
       `;
-
-        card.style.animationDelay = `${index * 0.2}s`;
-  
       timetableContainer.appendChild(card);
     });
 
