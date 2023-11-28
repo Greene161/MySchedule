@@ -1,92 +1,26 @@
-* {
-   box-sizing: border-box;
-}
-
-h1, h2, h3 {
-   font-family: sans-serif;
-   text-transform: uppercase;
-}
-
-p {
-   font-family: sans-serif;
-}
-
 body {
-   height: 100vh;
-   background: linear-gradient( to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("bg.jpg") no-repeat;
-   background-size: cover;
-   background-position: center;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   padding: 2rem;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-.container {
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   text-align: center;
-   background: rgba(1, 1, 1, 0.6);
-   color: white;
-   width: 100%;
-   padding: 2rem;
-   border-radius: 1rem;
-   
+header {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
 }
 
-.btn {
-   width: 100%;
-   background: #2caeb5;
-   font-size: 14pt;
-   padding: 1rem;
-   border: none;
-   
+#timetable {
+    padding: 20px;
 }
 
-.item {
-   width: 100%;
-   margin-bottom: 1rem;
+.card {
+    cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-.wrapper {
-   width: 100%;
-   font-family: sans-serif;
-}
-
-.list {
-   background: white;
-   color: black;
-   padding: 1rem;
-   display: none;
-   grid-template-columns: 2fr 1fr 1fr;
-   
-}
-
-
-.navigation {
-   display: grid;
-   grid-auto-flow: column;
-   grid-gap: 2rem;
-   margin-bottom: 2rem;
-}
-
-.nav {
-   text-decoration: none;
-   color: #2caeb5;
-}
-
-.nav:active {
-   border-bottom: solid 1px #ffc800;
-}
-
-@media(min-width: 769px){
-   .container {
-      width: 60%;
-}
-
-@media (max-width: 600px;) {
-   p {
-      font-size: 10pt;
-   }
+.card.collapsed {
+    transform: scaleY(0);
+    margin: 0 !important; /* Override Bootstrap margin for a smoother transition */
 }
